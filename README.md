@@ -9,7 +9,9 @@
 
 ### association
 has_many :messages
+
 has_many :groups_users
+
 has_many :groups, through: :groups_users
 
 
@@ -23,6 +25,7 @@ has_many :groups, through: :groups_users
 
 ### association
 belongs_to :user
+
 belongs_to :group
 
 
@@ -33,6 +36,7 @@ belongs_to :group
 
 ### association
 has_many :groups_users
+
 has_many :users, through: :groups_users
 
 
@@ -44,4 +48,5 @@ has_many :users, through: :groups_users
 
 ### association
 belongs_to :user
+
 belongs_to :group
